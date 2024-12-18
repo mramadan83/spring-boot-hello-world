@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-17:1.18
 WORKDIR /app
 
 # Copy Spring Boot JAR file
-COPY target/spring-boot-2-hello-world.jar app.jar
+COPY target/*.jar app.jar
 
 # Expose port
 EXPOSE 8080
